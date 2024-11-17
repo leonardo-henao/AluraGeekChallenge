@@ -47,6 +47,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
   margin: 1rem;
   border-width: 1px 0 0 0;
@@ -82,10 +83,13 @@ footer a {
 .poppins {
   font-family: var(--font-poppins);
 }
-
+nav {
+  margin-bottom: 1rem;
+}
 nav .brand {
+  text-decoration: none;
   font-family: var(--font-doto);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--cl-font);
   padding: 1rem;
@@ -212,7 +216,7 @@ nav .brand {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   line-clamp: 2;
-  height: 4rem;
+  height: 3.5rem;
   overflow: hidden;
   opacity: 0.8;
 }
@@ -490,6 +494,9 @@ nav .brand {
 @media screen and (min-width: 768px) {
   #list__products[type="list"] .car__product {
     flex-wrap: nowrap;
+  }
+  nav .brand {
+    font-size: 2rem;
   }
 }
 
