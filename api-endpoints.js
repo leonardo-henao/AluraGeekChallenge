@@ -1,8 +1,7 @@
 import { URL_API } from "./config.js";
 import { DefaultData } from "./default-data.js";
 
-const urlAPI =
-  document.location.hostname == "127.0.0.1" ? URL_API : process.env.URL_API;
+const urlAPI = URL_API;
 const headers = {
   "content-type": "application/json",
 };
