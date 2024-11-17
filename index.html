@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alura Geek Challenge - Leonardo Henao</title>
+    <meta name="author" content="Leonardo Henao - @lhenaoll" />
+    <meta
+      name="description"
+      content="Challenge de Alura Geek Challenge hecho por Leonardo Henao"
+    />
+    <meta name="theme-color" content="#171717" />
+    <link rel="icon" type="image/png" href="./assets/icons/alura_icon.png" />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav aria-label="Navegación principal">
+      <div class="brand" aria-label="Alura Geek Challenge">
+        Alura Geek Challenge
+      </div>
+    </nav>
+
+    <main role="main">
+      <div class="header__list">
+        <h2 class="title" aria-label="Productos">Productos</h2>
+        <div class="header__list-buttons">
+          <button
+            enable="false"
+            id="header__list-buttons-list"
+            onclick="changeViewList('list')"
+          >
+            <img
+              src="./assets/icons/square-list-svgrepo-com.svg"
+              alt="icono de listas"
+            />
+          </button>
+          <button
+            enable="true"
+            id="header__list-buttons-square"
+            onclick="changeViewList('square')"
+          >
+            <img
+              src="./assets/icons/squares-four-bold-svgrepo-com.svg"
+              alt="icono de lista en cuadros"
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        id="list__products"
+        aria-label="Lista de productos"
+        type="square"
+      ></div>
+    </main>
+
+    <aside aria-label="Formulario para agregar un nuevo producto">
+      <form
+        id="form__product"
+        onsubmit="return createProduct(event)"
+        aria-label="Formulario de nuevo producto"
+      >
+        <span
+          class="form__product-title"
+          aria-label="Título del formulario: Nuevo producto"
+          >Nuevo producto</span
+        >
+        <label
+          for="name"
+          aria-label="Etiqueta para el campo nombre del producto"
+          >Nombre del producto:</label
+        >
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Ej: Notebook"
+          aria-label="Campo para ingresar el nombre del producto"
+          aria-required="true"
+        />
+        <label
+          for="description"
+          aria-label="Etiqueta para el campo descripción del producto"
+          >Descripción:</label
+        >
+        <input
+          type="text"
+          id="description"
+          name="description"
+          required
+          placeholder="Descripción del producto"
+          aria-label="Campo para ingresar la descripción del producto"
+          aria-required="true"
+        />
+        <label
+          for="price"
+          aria-label="Etiqueta para el campo precio del producto"
+          >Precio:</label
+        >
+        <input
+          type="text"
+          id="price"
+          name="price"
+          required
+          placeholder="12.6"
+          aria-label="Campo para ingresar el precio del producto"
+          aria-required="true"
+        />
+        <label
+          for="photo"
+          aria-label="Etiqueta para el campo URL de la imagen del producto"
+          >URL de la imagen:</label
+        >
+        <input
+          type="url"
+          id="photo"
+          name="photo"
+          required
+          placeholder="https://..."
+          aria-label="Campo para ingresar la URL de la imagen del producto"
+          aria-required="true"
+        />
+        <input
+          type="submit"
+          value="Agregar producto"
+          aria-label="Botón para agregar el producto"
+        />
+      </form>
+    </aside>
+
+    <footer aria-label="Pie de página">
+      Creado por
+      <a
+        href="https://leonardohenao.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visita la página web de Leonardo Henao"
+      >
+        Leonardo Henao
+      </a>
+      con el
+      <img
+        class="footer__heart"
+        src="./assets/icons/heart-svgrepo-com.svg"
+        alt="Icono de corazon"
+        aria-label="Icono de corazon"
+      />
+      para
+      <a
+        href="https://www.aluracursos.com/"
+        target="_blank"
+        aria-label="Visita la página web de Alura Latam"
+      >
+        <img
+          class="footer__alura-logo"
+          src="https://www.aluracursos.com/assets/img/home/alura-logo.1730889068.svg"
+          alt="Icono de Alura"
+          title="Alura Latam"
+          aria-label="Icono de Alura Latam"
+        />
+      </a>
+    </footer>
+
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>
