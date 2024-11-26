@@ -1,5 +1,5 @@
-import { URL_API } from "./config.js";
-import { DefaultData } from "./default-data.js";
+import { URL_API } from "../helpers/config.js";
+import { DefaultData } from "../data/default-data.js";
 
 const urlAPI = URL_API;
 const headers = {

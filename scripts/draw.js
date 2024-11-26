@@ -1,5 +1,5 @@
-import { RemoveProduct, RestoreDefaultData } from "./api-endpoints.js";
-import { showProducts } from "./script.js";
+import { RemoveProduct, RestoreDefaultData } from "../api/api-endpoints.js";
+import { showProducts } from "../scripts/main.js";
 
 /*
  * Dibuja la tarjeta de un producto

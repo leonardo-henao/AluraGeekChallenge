@@ -1,4 +1,4 @@
-import { CreateProduct, GetProducts } from "./api-endpoints.js";
+import { CreateProduct, GetProducts } from "../api/api-endpoints.js";
 import { DrawCarProduct } from "./draw.js";
 
 const targetListProducts = document.querySelector("#list__products");

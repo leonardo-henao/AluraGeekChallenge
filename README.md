@@ -24,5 +24,29 @@ Proyecto creado con el fin de validar el conocimiento adquirido en [Alura Latam]
 - Permite agregar un nuevo producto
 - Permite eliminar un producto
 
+## Estructura del proyecto
+```
+├── api
+│   └── api-endpoints.js
+├── assets
+│   ├── icons
+│   │   ├── alura_icon.png
+│   │   ├── heart-svgrepo-com.svg
+│   │   ├── square-list-svgrepo-com.svg
+│   │   └── squares-four-bold-svgrepo-com.svg
+│   └── screenshot.png
+├── data
+│   └── default-data.js
+├── helpers
+│   └── config.js
+├── scripts
+│   ├── draw.js
+│   └── main.js
+├── eslint.config.mjs
+├── index.html
+├── README.md
+└── style.css
+```
+
 ## Comentarios
 Al eliminar todos los productos se reinicia el listado cargando nuevamente una lista de productos por defecto.
